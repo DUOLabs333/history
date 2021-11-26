@@ -1,6 +1,6 @@
 #!/bin/bash
 cd index
-./recollindex -m -D -c . &
+./recollindex -m -w 0 -D -c . &
 cd search
 RECOLL_CONFDIR=.. pdm run python ./webui-standalone.py -p 2011 &
 
