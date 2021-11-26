@@ -1,0 +1,8 @@
+phase = 1
+docsdone = 15
+filesdone = 248
+fileerrors = 0
+dbtotdocs = 15
+totfiles = 248
+fn = /home/system/Services/history/logs/2021-11-26
+hasmonitor = 1

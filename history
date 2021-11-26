@@ -1,0 +1,8 @@
+#!/bin/bash
+cd index
+./recollindex -m -D -c . &
+cd search
+RECOLL_CONFDIR=.. pdm run python ./webui-standalone.py -p 2011 &
+
+cd ../../proxy
+LANG=en_US.UTF-8 pdm run mitmdump --listen-host 127.0.0.1 -p 2010  -s history.py --ssl-insecure
