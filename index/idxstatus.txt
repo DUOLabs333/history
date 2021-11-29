@@ -1,8 +1,8 @@
 phase = 1
-docsdone = 5
-filesdone = 241
+docsdone = 10
+filesdone = 246
 fileerrors = 0
-dbtotdocs = 5
-totfiles = 241
+dbtotdocs = 10
+totfiles = 246
 fn = /home/system/Services/history/logs/2021-11-28
 hasmonitor = 1

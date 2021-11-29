@@ -2,6 +2,10 @@ from mitmproxy import http
 from datetime import datetime
 from bs4 import BeautifulSoup
 
+def responseheaders(flow):
+    if not flow.request.headers['accept'].startswith('text/html,application/xhtml+xml,application/xml'):
+        flow.response.stream = True
+    
 def response(flow: http.HTTPFlow):
     if flow.request.headers['accept'].startswith('text/html,application/xhtml+xml,application/xml'):
         soup=BeautifulSoup(flow.response.content)

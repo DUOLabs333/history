@@ -5,4 +5,4 @@ cd search
 RECOLL_CONFDIR=.. pdm run python ./webui-standalone.py -p 2012 &
 
 cd ../../proxy
-LANG=en_US.UTF-8 pdm run mitmdump --listen-host 127.0.0.1 -p 2011  -s history.py --ssl-insecure --set stream_large_bodies="10m"
+LANG=en_US.UTF-8 pdm run mitmdump --listen-host 127.0.0.1 -p 2011  -s history.py --ssl-insecure
