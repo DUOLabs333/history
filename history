@@ -2,7 +2,7 @@
 cd index
 ./recollindex -m -w 0 -D -c . &
 cd search
-RECOLL_CONFDIR=.. pdm run python ./webui-standalone.py -p 2011 &
+RECOLL_CONFDIR=.. pdm run python ./webui-standalone.py -p 2012 &
 
 cd ../../proxy
-LANG=en_US.UTF-8 pdm run mitmdump --listen-host 127.0.0.1 -p 2010  -s history.py --ssl-insecure
+LANG=en_US.UTF-8 pdm run mitmdump --listen-host 127.0.0.1 -p 2011  -s history.py --ssl-insecure --set stream_large_bodies=1
