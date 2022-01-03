@@ -6,7 +6,7 @@ summary = "Waitress WSGI server"
 
 [metadata]
 lock_version = "3.1"
-content_hash = "sha256:095d25791b370a6b49f6ddfaacee1eb097541e843d6cf5471051e94fbbc4653b"
+content_hash = "sha256:794c7bbefcac037b6fb468eb3ee5f2eaf76a6b96e27934d6c87a1f75bbf3829d"
 
 [metadata.files]
 "waitress 2.0.0" = [
