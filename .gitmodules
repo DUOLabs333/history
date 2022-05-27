@@ -1,0 +1,3 @@
+[submodule "search"]
+	path = search
+	url = https://framagit.org/medoc92/recollwebui
